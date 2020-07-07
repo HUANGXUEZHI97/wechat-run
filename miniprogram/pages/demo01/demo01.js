@@ -11,7 +11,7 @@ Page({
    * 节流
    */
 
-  throttle(fn, times, immediate) {
+  throttle(fn, times, immediate) { 
     let timer = null;
     return function () {
       let context = this
