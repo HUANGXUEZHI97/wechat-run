@@ -47,8 +47,9 @@
 
  <!-- 
    条件渲染
-    1. wx:if="{{true/false}}"
+    1. wx:if="{{true/false}}"  wx:elif="{{true/false}}"  wx:else 
     2. hidden
+    3.  wx:if和hidden就是vue中的v-if和v-show。只是此处的wx:if是直接移除，hidden是加上display:none
   -->
 <view wx:if="{{true}}">显示</view>
 <view wx:if="{{false}}">隐藏</view>
@@ -60,4 +61,8 @@
 <view hidden>hidden</view>
 <view hidden="{{true}}">hidden</view>
 <view hidden="{{false}}">hidden</view>
+
+---------000--------
+<view wx:if="{{false}}">wx:if</view>
+<view hidden style="display:block">hidden</view>
 

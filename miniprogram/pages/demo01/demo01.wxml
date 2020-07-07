@@ -1,0 +1,18 @@
+
+<!-- 
+  完成需求
+  1. input输入值，修改下方标签内值
+  2. 增加两个button用于add和minus数值
+
+  注意：
+  1. 无法在小程序当中的事件直接传参
+  2. 通过自定义属性的方法来传递参数
+  3. 事件源中获取自定义属性
+ -->
+
+ <input type="number" class="textInput" bindinput="handleInput"/>
+
+<button type="primary" bindtap="handleTap" data-operation="{{1}}">ADD</button>
+<button type="warn" bindtap="handleTap" data-operation="{{-1}}">MINUS</button>
+
+<view>{{inp}}</view>
