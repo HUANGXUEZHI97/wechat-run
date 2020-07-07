@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/getUserInfo/getUserInfo",
+    "pages/userCenter/userCenter",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room"
+  ],
+  "window": {
+    "backgroundColor": "#03a9f43b",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#03a9f4",
+    "navigationBarTitleText": "小光头社区",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/19.png",
+        "selectedIconPath": "icon/avatar09.png"
+      },
+      {
+        "pagePath": "pages/getUserInfo/getUserInfo",
+        "text": "获取用户信息",
+        "iconPath": "icon/19.png",
+        "selectedIconPath": "icon/04.png"
+      },
+      {
+        "pagePath": "pages/userCenter/userCenter",
+        "text": "用户中心",
+        "iconPath": "icon/19.png",
+        "selectedIconPath": "icon/07.png"
+      }
+    ],
+    "color": "#333333",
+    "selectedColor": "#03a9f4",
+    "backgroundColor": "#185f9a"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

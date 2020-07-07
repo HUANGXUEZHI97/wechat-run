@@ -1,0 +1,63 @@
+<!--
+  1.text标签是html中的span
+  2.view标签是html中的div
+-->
+<!-- <text>1</text>
+<text>2</text>
+<view>2</view>
+<view>2</view> -->
+
+<!-- 模板字符串 -->
+<view>{{msg}}</view>
+
+<!-- 字符串和花括号之间不能有空格 -->
+<view>
+	<checkbox checked="{{ischecked}}"></checkbox>
+</view>
+
+<!-- 表达式 -->
+
+<view>{{1+1}}</view>
+<view>{{'1'+'1'}}</view>
+<view>{{10%2 === 0 ? '偶数' : '奇数' }}</view>
+
+<!-- 
+  列表渲染：wx:for
+  1. wx:for="数组或对象"
+  2. 如果是数组并且只有一层循环，则可以不写 wx:for-item="arr" wx:for-index="index"
+  3. 这两个属性不能重复值：wx:for-item="arr" wx:for-index="index"
+  4. key最好不要是index，如果是数组则是
+  5. wx:for-item="每个子元素的总称" wx:for-index="每个子元素的索引" wx:key="这里可以直接使用总称下的属性名"
+ -->
+<view>
+  <view wx:for="{{arr}}" wx:for-item="item" wx:for-index="index" wx:key="name">
+  索引等于：{{index}}，名字：{{item.name}}
+  </view>
+</view>
+
+<!-- 
+  block
+    1 占位符的标签
+    2 写代码的时候可以看到标签
+    3 页面渲染 小程序会把它移除掉
+ -->
+ <block>
+   <view>11</view>
+ </block>
+
+ <!-- 
+   条件渲染
+    1. wx:if="{{true/false}}"
+    2. hidden
+  -->
+<view wx:if="{{true}}">显示</view>
+<view wx:if="{{false}}">隐藏</view>
+
+<view wx:if="{{false}}">1</view>
+<view wx:elif="{{false}}">2</view>
+<view wx:else>3</view>
+--------------
+<view hidden>hidden</view>
+<view hidden="{{true}}">hidden</view>
+<view hidden="{{false}}">hidden</view>
+
