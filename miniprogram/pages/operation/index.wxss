@@ -1,0 +1,32 @@
+.container {
+}
+
+.page-body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-child {
+  width: 90px;
+  height: 90px;
+  margin: 10px 10px;
+  border: 2px solid #848484;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.page-child > image {
+  width: 50px;
+  height: 50px;
+  flex: 2;
+}
+
+.page-child > text {
+  font-size: 14px;
+  margin-bottom: 10px;
+}

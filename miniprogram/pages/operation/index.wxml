@@ -1,0 +1,8 @@
+<view class="container" hover-class="none" hover-stop-propagation="false">
+  <view class="page-body" hover-class="none" hover-stop-propagation="false">
+    <view class="page-child" wx:for="{{entry}}" hover-class="none" hover-stop-propagation="false" bind:tap="interModules" data-url="{{item.url}}" wx:key="index">
+      <image class="" src="{{item.iconPath}}" alt="{{item.name}}" mode="aspectFit" lazy-load="false"></image>
+      <text class="" selectable="false" space="false" decode="false">{{item.name}}</text>
+    </view>
+  </view>
+</view>

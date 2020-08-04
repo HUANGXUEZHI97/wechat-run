@@ -1,4 +1,4 @@
-// pages/getUserInfo/getUserInfo.js
+// miniprogram/pages/operation/setting/index.js
 Page({
 
   /**
@@ -62,9 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  getInfo: function (e) {
-    console.log(e)
   }
 })

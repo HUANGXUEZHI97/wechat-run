@@ -1,7 +1,0 @@
-/* pages/getUserInfo/getUserInfo.wxss */
-.getInfo{
-  position: fixed;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}

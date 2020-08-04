@@ -1,7 +1,0 @@
-<!--pages/getUserInfo/getUserInfo.wxml-->
-<button 
-  bindgetuserinfo="getInfo" 
-  open-type="getUserInfo"
-  size="mini"
-  type="primary"
-  class="getInfo">获取用户信息</button>

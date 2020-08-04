@@ -30,9 +30,9 @@
   5. wx:for-item="每个子元素的总称" wx:for-index="每个子元素的索引" wx:key="这里可以直接使用总称下的属性名"
  -->
 <view>
-  <view wx:for="{{arr}}" wx:for-item="item" wx:for-index="index" wx:key="name">
-  索引等于：{{index}}，名字：{{item.name}}
-  </view>
+	<view wx:for="{{arr}}" wx:for-item="item" wx:for-index="index" wx:key="name">
+		索引等于：{{index}}，名字：{{item.name}}
+	</view>
 </view>
 
 <!-- 
@@ -41,11 +41,11 @@
     2 写代码的时候可以看到标签
     3 页面渲染 小程序会把它移除掉
  -->
- <block>
-   <view>11</view>
- </block>
+<block>
+	<view>11</view>
+</block>
 
- <!-- 
+<!-- 
    条件渲染
     1. wx:if="{{true/false}}"  wx:elif="{{true/false}}"  wx:else 
     2. hidden
@@ -66,3 +66,5 @@
 <view wx:if="{{false}}">wx:if</view>
 <view hidden style="display:block">hidden</view>
 
+<!-- button -->
+<button bindgetuserinfo="getInfo" open-type="getUserInfo" size="mini" type="primary" class="getInfo">获取用户信息</button>

@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/operation/index",
+    "pages/index/index",
     "pages/demo01/demo01",
     "pages/userCenter/userCenter",
-    "pages/getUserInfo/getUserInfo",
-    "pages/index/index",
     "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
@@ -15,7 +15,11 @@
     "pages/openapi/callback/callback",
     "pages/openapi/cloudid/cloudid",
     "pages/im/im",
-    "pages/im/room/room"
+    "pages/im/room/room",
+    "pages/operation/setting/index",
+    "pages/operation/play/index",
+    "pages/operation/list/index",
+    "pages/operation/edit/index"
   ],
   "window": {
     "backgroundColor": "#03a9f43b",
@@ -34,8 +38,8 @@
         "selectedIconPath": "icon/avatar09.png"
       },
       {
-        "pagePath": "pages/getUserInfo/getUserInfo",
-        "text": "获取用户信息",
+        "pagePath": "pages/operation/index",
+        "text": "操作中心",
         "iconPath": "icon/19.png",
         "selectedIconPath": "icon/04.png"
       },
